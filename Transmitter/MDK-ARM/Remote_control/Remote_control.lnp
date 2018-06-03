@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"remote_control\startup_stm32f103xb.o"
+"remote_control\stm32f1xx_it.o"
+"remote_control\main.o"
+"remote_control\stm32f1xx_hal_msp.o"
+"remote_control\nrf24l01.o"
+"remote_control\system_stm32f1xx.o"
+"remote_control\stm32f1xx_hal_tim.o"
+"remote_control\stm32f1xx_hal_rcc.o"
+"remote_control\stm32f1xx_hal_gpio_ex.o"
+"remote_control\stm32f1xx_hal_cortex.o"
+"remote_control\stm32f1xx_hal_spi.o"
+"remote_control\stm32f1xx_hal_gpio.o"
+"remote_control\stm32f1xx_hal_rcc_ex.o"
+"remote_control\stm32f1xx_hal_flash_ex.o"
+"remote_control\stm32f1xx_hal_pwr.o"
+"remote_control\stm32f1xx_hal_dma.o"
+"remote_control\stm32f1xx_hal_tim_ex.o"
+"remote_control\stm32f1xx_hal_spi_ex.o"
+"remote_control\stm32f1xx_hal.o"
+"remote_control\stm32f1xx_hal_flash.o"
+--library_type=microlib --strict --scatter "Remote_control\Remote_control.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Remote_control.map" -o Remote_control\Remote_control.axf
